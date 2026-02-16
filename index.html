@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Azar | Software Engineer & Hardware Designer</title>
+    <meta name="description"
+        content="Portfolio of George Azar - Computer Science Student, IEEE Mind Hack winner, and Full-stack Developer.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Inter & Cairo -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white fs-4" href="assets/Doc1cv.docx"  download data-en="Download CV" 
+                data-ar="تحميل السيرة الذاتية">
+                    Download CV
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <ion-icon name="menu-outline" class="text-white fs-2"></ion-icon>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#hero" data-en="Home" data-ar="الرئيسية">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-en="About" data-ar="من أنا">About</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#skills" data-en="Skills"
+                            data-ar="مهاراتي">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" data-en="Projects"
+                            data-ar="مشاريعي">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-en="Contact"
+                            data-ar="اتصل بي">Contact</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <div class="d-flex gap-2">
+                            <button id="lang-toggle" class="btn btn-sm btn-outline-primary rounded-pill px-3"
+                                onclick="toggleLanguage()">AR</button>
+                            <button id="theme-toggle"
+                                class="btn btn-sm btn-outline-primary rounded-circle p-1 d-flex align-items-center justify-content-center"
+                                style="width: 32px; height: 32px;" onclick="toggleTheme()">
+                                <ion-icon name="moon-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 reveal">
+                    <h5 class="text-primary fw-bold mb-3" data-en="HI THERE, I'M" data-ar="أهلاً بك، أنا">HI THERE, I'M
+                    </h5>
+                    <h1 class="display-3 fw-bold mb-4">George Azar</h1>
+                    <h2 class="h3 mb-4">
+                        <span data-en="I build" data-ar="أقوم ببناء">I build</span> <span id="typing-text"
+                            class="text-primary fw-bold"></span>
+                    </h2>
+                    <p class="lead mb-5 text-muted"
+                        data-en="A passionate Computer Science student and IEEE Mind Hack winner. Specialized in Full-stack Development, C++, Hardware Design with Arduino, and complex problem-solving."
+                        data-ar="طالب هندسة حاسوب شغوف وفائز بمسابقة IEEE Mind Hack. متخصص في تطوير الويب المتكامل، لغة C++، تصميم الأجهزة باستخدام Arduino، وحل المشكلات البرمجية المعقدة.">
+                        A passionate Computer Science student and IEEE Mind Hack winner. Specialized in Full-stack
+                        Development, C++, Hardware Design with Arduino, and complex problem-solving.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#projects" class="btn btn-primary px-4 py-2 rounded-pill fw-bold"
+                            data-en="View Projects" data-ar="عرض المشاريع">View Projects</a>
+                        <a href="#contact" class="btn btn-outline-light px-4 py-2 rounded-pill fw-bold"
+                            data-en="Let's Talk" data-ar="لنتحدث">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mt-5 mt-lg-0 reveal"
+     style="animation-delay: 0.2s">
+
+    <div class="image-container">
+
+        <div class="cardFlip hero-img">
+
+            <!-- Front -->
+            <div class="card-front">
+                <img src="assets/george-azar.jpg"
+                     alt="George Azar"
+                     class="img-fluid">
+            </div>
+
+            <!-- Back -->
+            <div class="card-back">
+                <h3>George Azar</h3>
+                <p>Full Stack Developer</p>
+                <p>Arduino</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-card py-5">
+        <div class="container">
+            <div class="row section-title mb-5">
+                <div class="col text-center">
+                    <h2 class="display-5 fw-bold text-white" data-en="Professional Profile"
+                        data-ar="الملف الشخصي المهني">Professional Profile</h2>
+                    <div class="mx-auto bg-primary rounded" style="width: 50px; height: 4px;"></div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="glass-card p-5 reveal">
+                        <p class="fs-5"
+                            data-en="I am a student at the Arab American University in Jenin, with strong problem-solving skills and a passion for technology. I enjoy web development and working with databases, and I am focused on expanding my knowledge in full-stack development and artificial intelligence. I aim to grow my skills and contribute to exciting projects in the tech field. Beyond software, I excel in hardware design using C++ and Arduino, combining low-level programming with physical components to create innovative solutions."
+                            data-ar="أنا طالب في الجامعة العربية الأمريكية بجنين، أمتلك مهارات قوية في حل المشكلات وشغفاً كبيراً بالتكنولوجيا. أستمتع بتطوير الويب والتعامل مع قواعد البيانات، وأركز حالياً على توسيع معرفتي في تطوير الأنظمة المتكاملة والذكاء الاصطناعي. أطمح لتنمية مهاراتي والمساهمة في مشاريع تقنية رائدة. بالإضافة إلى البرمجيات، أتميز في تصميم الإلكترونيات باستخدام لغة C++ والأردوينو، حيث أجمع بين البرمجة منخفضة المستوى والمكونات المادية لابتكار حلول تقنية. يعكس التزامي بالتميز والكفاءة الخوارزمية.">
+                            I am a student at the Arab American University in Jenin, with strong problem-solving skills
+                            and a passion for technology. I enjoy web development and working with databases, and I am
+                            focused on expanding my knowledge in full-stack development and artificial intelligence. I
+                            aim to grow my skills and contribute to exciting projects in the tech field.
+                            <br><br>
+                            Beyond software, I excel in hardware design using C++ and Arduino, combining low-level
+                            programming with physical components to create innovative solutions.
+                        </p>
+                        <div class="row mt-4">
+                            <div class="col-md-6 mb-3">
+                                <p class="mb-1 fw-bold text-primary" data-en="Education" data-ar="التعليم">Education</p>
+                                <p class="text-white small" data-en="Computer Science & Engineering, AAUP (GPA: 3.1)"
+                                    data-ar="هندسة الحاسوب، الجامعة العربية الأمريكية (معدل: 3.1)">Computer Science &
+                                    Engineering, AAUP (GPA: 3.1)</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="mb-1 fw-bold text-primary" data-en="Key Achievement" data-ar="أبرز الإنجازات">
+                                    Key Achievement</p>
+                                <p class="text-white small" data-en="6th Place - Palestinian Colligate Programming Contest"
+                                    data-ar="المركز السادس - مسابقة البرمجة الجامعية الفلسطينية">6th Place - Palestinian Colligate Programming Contest</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title" data-en="Featured Projects" data-ar="أبرز المشاريع">Featured Projects</h2>
+            <div class="row g-4">
+                <!-- MVC Final Project -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="glass-card project-card border-0">
+                        <div class="project-img bg-dark">
+                            <ion-icon name="layers-outline" class="text-primary" style="font-size: 5rem;"></ion-icon>
+                        </div>
+                        <div class="project-info">
+                            <span class="badge bg-primary mb-2">ASP.NET MVC</span>
+                            <h4 class="text-white" data-en="MVC Project" data-ar="مشروع MVC">MVC Project</h4>
+                            <p class="small"
+                                data-en="A comprehensive web application demonstrating full-stack capabilities with ASP.NET Core MVC, Entity Framework, and SQL Server."
+                                data-ar="تطبيق ويب شامل يستعرض مهارات التطوير المتكامل باستخدام ASP.NET Core MVC وEntity Framework وSQL Server.">
+                                A comprehensive web application demonstrating full-stack
+                                capabilities with ASP.NET Core MVC, Entity Framework, and SQL Server.</p>
+                            <a href="http://georgeshop.runasp.net/" target="_blank"
+                                class="btn btn-sm btn-outline-primary rounded-pill mt-2" data-en="View Source"
+                                data-ar="عرض الكود">View Source</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CELESTIAL TODO -->
+                <div class="col-md-6 col-lg-4 reveal" style="animation-delay: 0.1s">
+                    <div class="glass-card project-card border-0">
+                        <div class="project-img bg-dark">
+                            <ion-icon name="star-outline" class="text-primary" style="font-size: 5rem;"></ion-icon>
+                        </div>
+                        <div class="project-info">
+                            <span class="badge bg-primary mb-2">JavaScript / CSS</span>
+                            <h4 class="text-white" data-en="CELESTIAL Web TODO" data-ar="تطبيق المهام السماوي">CELESTIAL
+                                Web TODO</h4>
+                            <p class="small"
+                                data-en="A thematic task management system with personalized goals and advanced layout concepts from the 'Aside' design pattern."
+                                data-ar="نظام إدارة مهام بطابع خاص مع أهداف شخصية ومفاهيم تصميم متقدمة.">A thematic task
+                                management system with personalized goals and
+                                advanced layout concepts from the 'Aside' design pattern.</p>
+                            <a href="https://github.com/George-Azar40/CELESTIAL-Web-TODO-Lists-Goals" target="_blank"
+                                class="btn btn-sm btn-outline-primary rounded-pill mt-2" data-en="View Source"
+                                data-ar="عرض الكود">View Source</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Store Project -->
+                <div class="col-md-6 col-lg-4 reveal" style="animation-delay: 0.2s">
+                    <div class="glass-card project-card border-0">
+                        <div class="project-img bg-dark">
+                            <ion-icon name="cart-outline" class="text-primary" style="font-size: 5rem;"></ion-icon>
+                        </div>
+                        <div class="project-info">
+                            <span class="badge bg-primary mb-2" data-en="E-Commerce"
+                                data-ar="تجارة إلكترونية">E-Commerce</span>
+                            <h4 class="text-white" data-en="Online Store Final" data-ar="مشروع المتجر الإلكتروني">Online
+                                Store Final</h4>
+                            <p class="small"
+                                data-en="A complete retail platform prototype focusing on user experience, product management, and responsive frontend design."
+                                data-ar="نموذج أولي لمنصة تجزئة متكاملة تركز على تجربة المستخدم وإدارة المنتجات والتصميم المتجاوب.">
+                                A complete retail platform prototype focusing on user
+                                experience, product management, and responsive frontend design.</p>
+                            <a href="https://george-azar40.github.io/store-final-project/" target="_blank"
+                                class="btn btn-sm btn-outline-primary rounded-pill mt-2" data-en="View Source"
+                                data-ar="عرض الكود">View Source</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Obesity Rate -->
+                <div class="col-md-6 col-lg-4 reveal" style="animation-delay: 0.3s">
+                    <div class="glass-card project-card border-0">
+                        <div class="project-img bg-dark">
+                            <ion-icon name="fitness-outline" class="text-primary" style="font-size: 5rem;"></ion-icon>
+                        </div>
+                        <div class="project-info">
+                            <span class="badge bg-primary mb-2" data-en="C# / Algorithms" data-ar="C# / خوارزميات">C# /
+                                Algorithms</span>
+                            <h4 class="text-white" data-en="Obesity Calculator" data-ar="حاسبة معدل السمنة">Obesity
+                                Calculator</h4>
+                            <p class="small"
+                                data-en="A health monitoring tool that calculates BMI and obesity rates, utilizing precise algorithmic logic and data validation."
+                                data-ar="أداة لمراقبة الصحة تحسب مؤشر كتلة الجسم ومعدلات السمنة باستخدام منطق خوارزمي دقيق.">
+                                A health monitoring tool that calculates BMI and obesity rates,
+                                utilizing precise algorithmic logic and data validation.</p>
+                            <a href="https://george-azar40.github.io/Obesity-Rate-calculator/" target="_blank"
+                                class="btn btn-sm btn-outline-primary rounded-pill mt-2" data-en="View Source"
+                                data-ar="عرض الكود">View Source</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Arduino Project -->
+                <div class="col-md-6 col-lg-4 reveal" style="animation-delay: 0.4s">
+                    <div class="glass-card project-card border-0">
+                        <div class="project-img bg-dark">
+                            <ion-icon name="hardware-chip-outline" class="text-primary"
+                                style="font-size: 5rem;"></ion-icon>
+                        </div>
+                        <div class="project-info">
+                            <span class="badge bg-primary mb-2" data-en="Embedded C++" data-ar="C++ المدمجة">Embedded
+                                C++</span>
+                            <h4 class="text-white" data-en="Tinkercad Hardware Designs" data-ar="تصاميم Tinkercad">
+                                Tinkercad Hardware Designs</h4>
+                            <p class="small"
+                                data-en="Click to explore my interactive 3D circuits and Arduino prototypes on Tinkercad."
+                                data-ar="اضغط لاستكشاف دوائري ثلاثية الأبعاد التفاعلية ونماذج Arduino الأولية على Tinkercad.">
+                                Click to explore my interactive 3D circuits and Arduino prototypes on Tinkercad.</p>
+                            <a href="https://www.tinkercad.com/users/hWHDGmTxRDF" target="_blank"
+                                class="btn btn-sm btn-outline-primary rounded-pill mt-2" data-en="Visit Tinkercad"
+                                data-ar="زيارة Tinkercad">Visit Tinkercad</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title" data-en="Technical Expertise" data-ar="الخبرات التقنية">Technical Expertise</h2>
+            <div class="row">
+                <!-- Web Dev -->
+                <div class="col-md-4 mb-4 reveal" style="animation-delay: 0.1s">
+                    <div class="glass-card skill-card h-100 border-0">
+                        <ion-icon name="code-slash-outline" class="text-primary fs-1 mb-3"></ion-icon>
+                        <h4 class="text-white" data-en="Web & Backend" data-ar="الويب والأنظمة الخلفية">Web & Backend
+                        </h4>
+                        <ul class="list-unstyled">
+                            <li>HTML5 / CSS3 / JavaScript</li>
+                            <li>Bootstrap / UI Design</li>
+                            <li>ASP.NET Core / MVC</li>
+                            <li>Entity Framework Core</li>
+                            <li>Databases (SQL Server)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Languages -->
+                <div class="col-md-4 mb-4 reveal" style="animation-delay: 0.2s">
+                    <div class="glass-card skill-card h-100 border-0">
+                        <ion-icon name="terminal-outline" class="text-primary fs-1 mb-3"></ion-icon>
+                        <h4 class="text-white" data-en="Core Languages" data-ar="اللغات الأساسية">Core Languages</h4>
+                        <ul class="list-unstyled">
+                            <li>C# / Java</li>
+                            <li>C++ / Algorithms</li>
+                            <li>Assembly Programming</li>
+                            <li>Clean Code Principles</li>
+                            <li>Problem Solving (ICPC)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Hardware -->
+                <div class="col-md-4 mb-4 reveal" style="animation-delay: 0.3s">
+                    <div class="glass-card skill-card h-100 border-0">
+                        <ion-icon name="hardware-chip-outline" class="text-primary fs-1 mb-3"></ion-icon>
+                        <h4 class="text-white" data-en="Hardware & Systems" data-ar="الأجهزة والأنظمة">Hardware &
+                            Systems</h4>
+                        <ul class="list-unstyled">
+                            <li data-en="Arduino / Microcontrollers" data-ar="أردوينو / المتحكمات الدقيقة">Arduino /
+                                Microcontrollers</li>
+                            <li data-en="C++ for Embedded" data-ar="C++ للأنظمة المدمجة">C++ for Embedded</li>
+                            <li data-en="Hardware Design & Maintenance" data-ar="تصميم وصيانة الأجهزة">Hardware Design &
+                                Maintenance</li>
+                            <li data-en="Circuit Logic" data-ar="منطق الدوائر الكهربائية">Circuit Logic</li>
+                            <li data-en="Automation Systems" data-ar="أنظمة الأتمتة">Automation Systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-card">
+        <div class="container text-center">
+            <h2 class="section-title" data-en="Get In Touch" data-ar="تواصل معي">Get In Touch</h2>
+            <p class="lead mb-5 text-muted" data-en="Currently open to new opportunities and collaborations."
+                data-ar="متاح حالياً للفرص الجديدة والتعاون المشترك.">Currently open to new opportunities and
+                collaborations.</p>
+            <div class="d-flex justify-content-center mb-5">
+                <a href="https://github.com/George-Azar40" class="contact-link" target="_blank"><ion-icon
+                        name="logo-github"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/george-azar-621613355/" class="contact-link"
+                    target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="mailto:georgeazar456@gmail.com" class="contact-link"><ion-icon
+                        name="mail-outline"></ion-icon></a>
+            </div>
+            <p class="text-muted">&copy; 2026 George Azar. Built with &hearts; using Bootstrap.</p>
+        </div>
+    </section>
+
+    <!-- Bootstrap & Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
